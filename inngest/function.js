@@ -1,4 +1,7 @@
-import { inngest } from './client';
+// import { inngest } from './client';
+
+import { inngest } from "@/lib/inngest/client";
+
 import prisma from '@/lib/prisma';
 
 export const syncUserCreation =inngest.createFunction(

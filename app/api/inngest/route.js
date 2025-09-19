@@ -1,5 +1,6 @@
 import { serve } from "inngest/next";
-import { inngest } from "../../../inngest/client";
+import { inngest } from "../../../lib/inngest/client";
+// import { inngest } from "../../../inngest/client";
 import { syncUserCreation, syncUserUpdate, syncUserDeletion } from "../../../inngest/function";
 
 // Create an API that serves zero functions

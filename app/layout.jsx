@@ -3,9 +3,6 @@ import { Toaster } from "react-hot-toast";
 import StoreProvider from "@/app/StoreProvider";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Banner from "@/components/Banner";
-
-
 
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600"] });
@@ -18,14 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <ClerkProvider>
-        <html lang="en">
-            <body className={`${outfit.className} antialiased`}>
-                <StoreProvider>
-                    <Toaster />
-                    {children}
-                </StoreProvider>
-            </body>
-        </html>
+            <html lang="en">
+                <body className={`${outfit.className} antialiased`}>
+                    <StoreProvider>
+                        <Toaster />
+                        {children}
+                    </StoreProvider>
+                </body>
+            </html>
         </ClerkProvider>
     );
 }

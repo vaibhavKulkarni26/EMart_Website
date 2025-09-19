@@ -1,6 +1,6 @@
 "use client";
 
-import { PackageIcon, Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -186,8 +186,6 @@ export default Navbar;
 
 //                         </UserButton>)
 //                         }
-
-                        
 
 //                     </div>
 

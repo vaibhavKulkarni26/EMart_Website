@@ -1,11 +1,8 @@
-// import { inngest } from './client';
-
-import { inngest } from "@/lib/inngest/client";
-
+import client from '../../../lib/inngest/client'
 import prisma from '@/lib/prisma';
 
 export const syncUserCreation =inngest.createFunction(
-    {id : 'sync-user-creation'},
+    {id : 'sync-user-create'},
     {event : 'clerk/user.created'},
     async ({event}) => {
         const {data } = event
